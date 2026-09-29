@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eyakub Shop - অরিজিনাল জুতা</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👟</text></svg>">
+<style>
+:root{--o:#f85606;--od:#d54600;--bg:#f5f5f5;--tx:#212121;--mu:#757575;--gr:#1a9c3d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans Bengali','Hind Siliguri',system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.5}
+a{color:inherit;text-decoration:none}
+.w{max-width:1200px;margin:auto;padding:0 12px}
+.top{background:#212121;color:#fff;font-size:12px;padding:6px 0}
+.top .w{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+header{background:var(--o);position:sticky;top:0;z-index:10;box-shadow:0 2px 6px #0003}
+.hd{display:flex;align-items:center;gap:10px;padding:10px 12px;flex-wrap:wrap}
+.logo{color:#fff;font-size:24px;font-weight:800}
+.logo span{background:#fff;color:var(--o);padding:0 6px;border-radius:4px;margin-left:2px}
+.hd input{flex:1;min-width:160px;padding:10px 12px;border:0;border-radius:4px;font:inherit}
+.wa{background:#25d366;color:#fff;padding:9px 14px;border-radius:4px;font-weight:700;font-size:14px}
+.ban{background:linear-gradient(120deg,#ff7a1a,#f85606 55%,#c93d00);color:#fff;border-radius:8px;margin:14px 0;padding:34px 22px}
+.ban h1{font-size:clamp(26px,5vw,44px);line-height:1.15}
+.ban p{margin-top:8px;font-size:15px;opacity:.95}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 10px}
+.chip{background:#fff;border:1px solid #ddd;border-radius:20px;padding:6px 14px;cursor:pointer;white-space:nowrap;font-size:14px;user-select:none}
+.chip.on{background:var(--o);border-color:var(--o);color:#fff}
+h2{font-size:19px;margin:14px 0 10px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:640px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:900px){.grid{grid-template-columns:repeat(5,1fr)}}
+.card{background:#fff;border-radius:6px;overflow:hidden;cursor:pointer;transition:box-shadow .2s}
+.card:hover{box-shadow:0 4px 14px #0002}
+.im{position:relative;aspect-ratio:1;background:#eee}
+.im img{width:100%;height:100%;object-fit:cover;display:block}
+.bd{position:absolute;top:8px;right:8px;background:var(--o);color:#fff;font-size:12px;padding:2px 7px;border-radius:3px}
+.ci{padding:8px 10px 12px}
+.nm{font-size:14px;height:42px;overflow:hidden}
+.pr{color:var(--o);font-size:19px;font-weight:700}
+.ci s{color:var(--mu);font-size:13px}
+.st{font-size:12px;color:var(--gr);margin-top:2px}.st.out{color:#d32f2f}
+.box{background:#fff;border-radius:8px;padding:16px;margin:14px 0}
+.pd{display:grid;gap:18px}
+@media(min-width:800px){.pd{grid-template-columns:1fr 1fr}}
+#mi{width:100%;aspect-ratio:1;object-fit:cover;border-radius:6px;background:#eee}
+.th{display:flex;gap:8px;margin-top:8px;overflow-x:auto}
+.th img{width:64px;height:64px;object-fit:cover;border-radius:4px;cursor:pointer;border:2px solid #eee}
+.big{font-size:30px;color:var(--o);font-weight:800}
+.lb{font-size:14px;color:var(--mu);margin:12px 0 6px}
+input,select,textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:4px;font:inherit;margin-bottom:8px;background:#fff}
+textarea{min-height:70px}
+.btn{display:block;width:100%;background:var(--o);color:#fff;border:0;padding:13px;border-radius:4px;font:inherit;font-weight:700;font-size:16px;cursor:pointer}
+.btn:hover{background:var(--od)}
+.btn.g{background:#25d366}.btn.r{background:#d32f2f}.btn.s{width:auto;display:inline-block;padding:6px 12px;font-size:13px}
+footer{background:#212121;color:#ddd;margin-top:30px;padding:24px 0;font-size:14px;text-align:center}
+footer a{color:#ffb380;margin:0 8px}
+.empty,.ld{text-align:center;color:var(--mu);padding:50px 10px;grid-column:1/-1}
+.adm{padding-top:14px;padding-bottom:40px}
+.ah{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.row{display:grid;gap:8px}
+@media(min-width:600px){.row{grid-template-columns:1fr 1fr}}
+.pv{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.pv div{position:relative}.pv img{width:70px;height:70px;object-fit:cover;border-radius:4px}
+.pv b{position:absolute;top:-6px;right:-6px;background:#d32f2f;color:#fff;border-radius:50%;width:20px;height:20px;text-align:center;font-size:13px;cursor:pointer}
+.li{display:flex;gap:10px;align-items:center;border-bottom:1px solid #eee;padding:8px 0}
+.li img{width:56px;height:56px;object-fit:cover;border-radius:4px}
+.li>div{flex:1;font-size:14px}
+.note{background:#fff3cd;border:1px solid #ffe08a;padding:10px;border-radius:6px;font-size:13px;margin:10px 0}
+.ord{border-bottom:1px solid #eee;padding:10px 0;font-size:14px}
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script>
+/* ============ সেটিংস (এখানে শুধু এই অংশ বদলাবেন) ============ */
+const WA = "966567225245";
+const FB = "https://www.facebook.com/profile.php?id=61594226919156";
+// Firebase কনফিগ এখানে পেস্ট করুন (নির্দেশনা আলাদা দেওয়া আছে)। খালি থাকলে ডেমো মোডে চলবে।
+const FIREBASE = { apiKey:"", authDomain:"", projectId:"", appId:"" };
+/* =========================================================== */
+
+const $=s=>document.querySelector(s);
+const useFB=!!FIREBASE.apiKey&&typeof firebase!=='undefined';
+let db,auth;
+if(useFB){firebase.initializeApp(FIREBASE);db=firebase.firestore();auth=firebase.auth();}
+const LS={g:k=>JSON.parse(localStorage.getItem(k)||'[]'),s:(k,v)=>localStorage.setItem(k,JSON.stringify(v))};
+const D={
+  async list(c){if(useFB){const s=await db.collection(c).get();return s.docs.map(d=>({...d.data(),id:d.id}));}return LS.g(c);},
+  async save(c,o){
+    if(useFB){if(o.id){const x={...o};delete x.id;await db.collection(c).doc(o.id).set(x);}else await db.collection(c).add(o);}
+    else{const a=LS.g(c);if(o.id){const i=a.findIndex(x=>x.id==o.id);a[i]=o;}else{o.id=String(Date.now());a.push(o);}LS.s(c,a);}
+  },
+  async del(c,id){if(useFB)await db.collection(c).doc(id).delete();else LS.s(c,LS.g(c).filter(x=>x.id!=id));}
+};
+
+let P=[],loaded=0,st={q:'',cat:''},cur={},CATS=[],isAdmin=false,ed={id:'',imgs:[]};
+const PH="data:image/svg+xml,"+encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><rect fill='#eee' width='300' height='300'/><text x='50%' y='55%' font-size='90' text-anchor='middle'>👟</text></svg>");
+const money=n=>'৳'+Number(n||0).toLocaleString('en-IN');
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const disc=p=>p.old>p.price?Math.round((p.old-p.price)/p.old*100):0;
+
+async function load(){try{P=(await D.list('products')).sort((a,b)=>(b.ts||0)-(a.ts||0));}catch(e){P=[];}loaded=1;}
+
+const header=s=>`<div class="top"><div class="w"><span>🚚 সারাদেশে ডেলিভারি • ১০০% অরিজিনাল জুতা</span><a href="${FB}" target="_blank" rel="noopener">📘 আমাদের Facebook পেইজ</a></div></div>
+<header><div class="hd w"><a class="logo" href="#/">Eyakub<span>Shop</span></a>${s?`<input id="q" placeholder="জুতা খুঁজুন..." value="${esc(st.q)}" oninput="st.q=this.value;grid()">`:'<div style="flex:1"></div>'}<a class="wa" href="https://wa.me/${WA}" target="_blank" rel="noopener">💬 WhatsApp</a></div></header>`;
+const footer=()=>`<footer><div class="w"><p><b>Eyakub Shop</b> — অরিজিনাল জুতার বিশ্বস্ত ঠিকানা</p><p style="margin-top:8px"><a href="${FB}" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/${WA}" target="_blank" rel="noopener">WhatsApp: +${WA}</a></p><p style="margin-top:8px;color:#999">© ${new Date().getFullYear()} Eyakub Shop. সর্বস্বত্ব সংরক্ষিত।</p></div></footer>`;
+
+const card=p=>`<div class="card" onclick="location.hash='#/p/${p.id}'"><div class="im"><img src="${p.imgs?.[0]||PH}" alt="${esc(p.name)}" loading="lazy">${disc(p)?`<b class="bd">-${disc(p)}%</b>`:''}</div><div class="ci"><div class="nm">${esc(p.name)}</div><div class="pr">${money(p.price)}</div>${p.old>p.price?`<s>${money(p.old)}</s>`:''}<div class="st ${p.stock>0?'':'out'}">${p.stock>0?'স্টকে আছে: '+p.stock+' জোড়া':'স্টক শেষ'}</div></div></div>`;
+
+function home(){
+  CATS=[...new Set(P.map(p=>p.cat).filter(Boolean))];
+  $('#app').innerHTML=header(1)+`<div class="w"><div class="ban"><h1>অরিজিনাল জুতা,<br>সেরা দামে</h1><p>ক্যাশ অন ডেলিভারি • সরাসরি WhatsApp এ অর্ডার</p></div>
+  <div class="chips"><span class="chip ${st.cat?'':'on'}" onclick="setCat(-1)">সব</span>${CATS.map((c,i)=>`<span class="chip ${st.cat==c?'on':''}" onclick="setCat(${i})">${esc(c)}</span>`).join('')}</div>
+  <h2>সকল প্রডাক্ট</h2><div class="grid" id="grid"></div></div>`+footer();
+  grid();
+}
+function setCat(i){st.cat=i<0?'':CATS[i];home();}
+function grid(){
+  const q=st.q.toLowerCase(),l=P.filter(p=>(!st.cat||p.cat==st.cat)&&(!q||(p.name+' '+(p.brand||'')).toLowerCase().includes(q)));
+  $('#grid').innerHTML=l.length?l.map(card).join(''):'<div class="empty">কোনো প্রডাক্ট পাওয়া যায়নি।</div>';
+}
+
+function pick(k,el){cur[k]=el.textContent;el.parentNode.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));el.classList.add('on');}
+function prod(id){
+  const p=P.find(x=>x.id==id);if(!p){location.hash='#/';return;}
+  cur={color:p.colors?.[0]||'',size:''};
+  const more=P.filter(x=>x.id!=id);
+  $('#app').innerHTML=header(0)+`<div class="w"><p style="margin:10px 0;font-size:13px"><a href="#/">← হোম</a></p>
+  <div class="box pd"><div><img id="mi" src="${p.imgs?.[0]||PH}" alt=""><div class="th">${(p.imgs||[]).map(s=>`<img src="${s}" onclick="$('#mi').src=this.src" alt="">`).join('')}</div></div>
+  <div><h1 style="font-size:21px">${esc(p.name)}</h1>${p.brand?`<p style="color:var(--mu);font-size:14px">ব্র্যান্ড: ${esc(p.brand)}</p>`:''}
+  <div style="margin:10px 0"><span class="big">${money(p.price)}</span> ${p.old>p.price?`<s style="color:var(--mu)">${money(p.old)}</s> <b class="bd" style="position:static;display:inline-block">-${disc(p)}%</b>`:''}</div>
+  <div class="st ${p.stock>0?'':'out'}" style="font-size:14px">${p.stock>0?'✔ স্টকে আছে: '+p.stock+' জোড়া':'✖ স্টক শেষ'}</div>
+  ${p.colors?.length?`<div class="lb">কালার</div><div class="chips" style="flex-wrap:wrap">${p.colors.map((c,i)=>`<span class="chip ${i?'':'on'}" onclick="pick('color',this)">${esc(c)}</span>`).join('')}</div>`:''}
+  ${p.sizes?.length?`<div class="lb">সাইজ</div><div class="chips" style="flex-wrap:wrap">${p.sizes.map(c=>`<span class="chip" onclick="pick('size',this)">${esc(c)}</span>`).join('')}</div>`:''}
+  <div class="lb">পরিমাণ (জোড়া)</div><input id="oq" type="number" min="1" max="${p.stock||1}" value="1" style="width:100px">
+  <div class="lb"><b>অর্ডারের তথ্য দিন</b></div>
+  <input id="on" placeholder="আপনার পূর্ণ নাম *"><input id="op" type="tel" placeholder="ফোন নাম্বার *">
+  <input id="od" placeholder="জেলা / এলাকা"><textarea id="oa" placeholder="সম্পূর্ণ ঠিকানা *"></textarea><input id="ot" placeholder="অতিরিক্ত নোট (ঐচ্ছিক)">
+  <button class="btn g" onclick="order('${p.id}')">💬 WhatsApp এ অর্ডার করুন</button></div></div>
+  ${p.desc?`<div class="box"><h2 style="margin-top:0">বিবরণ</h2><p style="white-space:pre-line;font-size:14px">${esc(p.desc)}</p></div>`:''}
+  <h2>আরো প্রডাক্ট দেখুন</h2><div class="grid">${more.map(card).join('')||'<div class="empty">আরো প্রডাক্ট শীঘ্রই আসছে।</div>'}</div></div>`+footer();
+}
+async function order(id){
+  const p=P.find(x=>x.id==id),g=i=>$('#'+i).value.trim();
+  const n=g('on'),ph=g('op'),ad=g('oa'),dist=g('od'),nt=g('ot');
+  if(!n||!ph||!ad)return alert('নাম, ফোন নাম্বার ও ঠিকানা দিন');
+  if(p.sizes?.length&&!cur.size)return alert('সাইজ সিলেক্ট করুন');
+  if(p.stock<1)return alert('দুঃখিত, স্টক শেষ');
+  const q=Math.max(1,+g('oq')||1),total=p.price*q;
+  try{await D.save('orders',{pid:p.id,product:p.name,color:cur.color||'',size:cur.size||'',qty:q,total,name:n,phone:ph,address:ad,district:dist,note:nt,ts:Date.now()});}catch(e){}
+  const msg=`🛒 নতুন অর্ডার - Eyakub Shop\n\nপ্রডাক্ট: ${p.name}\nকালার: ${cur.color||'-'}\nসাইজ: ${cur.size||'-'}\nপরিমাণ: ${q} জোড়া\nমোট দাম: ${money(total)}\n\nনাম: ${n}\nফোন: ${ph}\nজেলা: ${dist||'-'}\nঠিকানা: ${ad}\nনোট: ${nt||'-'}`;
+  location.href='https://wa.me/'+WA+'?text='+encodeURIComponent(msg);
+}
+
+/* ---------------- Admin ---------------- */
+function admin(){
+  if(!isAdmin){
+    $('#app').innerHTML=header(0)+`<div class="w"><div class="box" style="max-width:380px;margin:40px auto"><h2 style="margin-top:0">Admin Login</h2>
+    <input id="lu" placeholder="${useFB?'ইমেইল':'ইউজারনেম'}" autocomplete="username"><input id="lp" type="password" placeholder="পাসওয়ার্ড" autocomplete="current-password">
+    <button class="btn" onclick="login()">লগইন</button>${useFB?'':'<div class="note">ডেমো মোড: ইউজারনেম <b>admin</b>, পাসওয়ার্ড <b>admin123</b></div>'}</div></div>`;
+    return;
+  }
+  $('#app').innerHTML=header(0)+`<div class="w adm"><div class="ah"><h2 style="margin:0">Admin Panel</h2><span><a href="#/" class="btn s" style="background:#555">সাইট দেখুন</a> <button class="btn s r" onclick="logout()">লগআউট</button></span></div>
+  ${useFB?'':'<div class="note">⚠ ডেমো মোড: ডাটা শুধু এই ব্রাউজারে থাকবে, কাস্টমাররা দেখবে না। সবার জন্য Firebase চালু করুন।</div>'}
+  <div class="box"><h3 id="ft">নতুন প্রডাক্ট যোগ করুন</h3>
+  <input id="fn" placeholder="প্রডাক্টের নাম *"><div class="row"><input id="fc" placeholder="ক্যাটাগরি (যেমন: স্নিকার্স)"><input id="fb" placeholder="ব্র্যান্ড"></div>
+  <div class="row"><input id="fo" type="number" placeholder="আগের দাম (৳)"><input id="fp" type="number" placeholder="এখনকার দাম (৳) *"></div>
+  <input id="fs" type="number" placeholder="স্টক (কত জোড়া আছে)">
+  <input id="fcol" placeholder="কালার (কমা দিয়ে লিখুন: কালো, সাদা, নীল)"><input id="fsz" placeholder="সাইজ (কমা দিয়ে লিখুন: 39, 40, 41, 42)">
+  <textarea id="fd" placeholder="প্রডাক্টের বিবরণ"></textarea>
+  <div class="lb">ছবি (সর্বোচ্চ ৪টি, গ্যালারি থেকে)</div><input id="ff" type="file" accept="image/*" multiple onchange="pickImgs(this)"><div class="pv" id="pv"></div>
+  <button class="btn" onclick="saveP()">সেভ করুন</button> <button class="btn s" style="background:#888;margin-top:8px" onclick="ed={id:'',imgs:[]};admin();lst()">ক্লিয়ার</button></div>
+  <div class="box"><h3>সব প্রডাক্ট (<span id="cn">0</span>)</h3><div id="pl"></div></div>
+  <div class="box"><h3>অর্ডার তালিকা</h3><div id="ol">লোড হচ্ছে...</div></div></div>`;
+  lst();orders();
+}
+async function login(){
+  const u=$('#lu').value.trim(),p=$('#lp').value;
+  if(useFB){try{await auth.signInWithEmailAndPassword(u,p);}catch(e){alert('ইমেইল বা পাসওয়ার্ড ভুল');}}
+  else if(u==='admin'&&p==='admin123'){isAdmin=true;sessionStorage.a='1';admin();}else alert('ইউজারনেম বা পাসওয়ার্ড ভুল');
+}
+function logout(){if(useFB)auth.signOut();isAdmin=false;sessionStorage.a='';location.hash='#/';}
+function comp(f){return new Promise(r=>{const i=new Image;i.onload=()=>{const s=Math.min(1,700/Math.max(i.width,i.height)),c=document.createElement('canvas');c.width=i.width*s;c.height=i.height*s;c.getContext('2d').drawImage(i,0,0,c.width,c.height);r(c.toDataURL('image/jpeg',.65));};i.src=URL.createObjectURL(f);});}
+async function pickImgs(el){for(const f of el.files){if(ed.imgs.length>=4)break;ed.imgs.push(await comp(f));}el.value='';prv();}
+function prv(){$('#pv').innerHTML=ed.imgs.map((s,i)=>`<div><img src="${s}"><b onclick="ed.imgs.splice(${i},1);prv()">×</b></div>`).join('');}
+function lst(){
+  $('#cn').textContent=P.length;
+  $('#pl').innerHTML=P.map(p=>`<div class="li"><img src="${p.imgs?.[0]||PH}"><div><b>${esc(p.name)}</b><br>${money(p.price)} ${p.old>p.price?'<s>'+money(p.old)+'</s>':''} • স্টক: ${p.stock}</div><button class="btn s" onclick="editP('${p.id}')">এডিট</button> <button class="btn s r" onclick="delP('${p.id}')">ডিলিট</button></div>`).join('')||'<p style="color:var(--mu)">এখনো কোনো প্রডাক্ট নেই।</p>';
+}
+function editP(id){
+  const p=P.find(x=>x.id==id);ed={id:p.id,imgs:[...(p.imgs||[])]};
+  const s=(i,v)=>$('#'+i).value=v??'';
+  s('fn',p.name);s('fc',p.cat);s('fb',p.brand);s('fo',p.old||'');s('fp',p.price);s('fs',p.stock);s('fcol',(p.colors||[]).join(', '));s('fsz',(p.sizes||[]).join(', '));s('fd',p.desc);
+  $('#ft').textContent='প্রডাক্ট এডিট করুন';prv();window.scrollTo(0,0);
+}
+async function delP(id){if(!confirm('এই প্রডাক্ট ডিলিট করবেন?'))return;await D.del('products',id);await load();lst();}
+async function saveP(){
+  const g=i=>$('#'+i).value.trim(),L=s=>s.split(',').map(x=>x.trim()).filter(Boolean);
+  if(!g('fn')||!g('fp'))return alert('নাম ও দাম দিন');
+  if(!ed.imgs.length)return alert('কমপক্ষে ১টি ছবি দিন');
+  const o={name:g('fn'),cat:g('fc'),brand:g('fb'),old:+g('fo')||0,price:+g('fp'),stock:+g('fs')||0,colors:L(g('fcol')),sizes:L(g('fsz')),desc:g('fd'),imgs:ed.imgs,ts:Date.now()};
+  if(ed.id)o.id=ed.id;
+  try{await D.save('products',o);}catch(e){return alert('সেভ হয়নি: '+e.message);}
+  ed={id:'',imgs:[]};await load();admin();alert('সেভ হয়েছে ✔');
+}
+async function orders(){
+  let o=[];try{o=(await D.list('orders')).sort((a,b)=>b.ts-a.ts);}catch(e){}
+  $('#ol').innerHTML=o.map(x=>`<div class="ord"><b>${esc(x.product)}</b> (${esc(x.color)} / ${esc(x.size)}) × ${x.qty} = ${money(x.total)}<br>👤 ${esc(x.name)} • 📞 ${esc(x.phone)}<br>📍 ${esc(x.district)} ${esc(x.address)}<br><small>${new Date(x.ts).toLocaleString('bn-BD')}</small> <button class="btn s r" onclick="D.del('orders','${x.id}').then(orders)">মুছুন</button></div>`).join('')||'<p style="color:var(--mu)">কোনো অর্ডার নেই।</p>';
+}
+
+/* ---------------- Router ---------------- */
+async function route(){
+  const h=location.hash;window.scrollTo(0,0);
+  if(h.startsWith('#/admin'))return admin();
+  if(!loaded){$('#app').innerHTML='<p class="ld">লোড হচ্ছে...</p>';await load();}
+  h.startsWith('#/p/')?prod(h.slice(4)):home();
+}
+if(useFB)auth.onAuthStateChanged(u=>{isAdmin=!!u;route();});
+else{isAdmin=sessionStorage.a==='1';route();}
+window.addEventListener('hashchange',route);
+</script>
+</body>
+</html>

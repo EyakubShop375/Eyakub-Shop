@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Eyakub Shop - অরিজিনাল জুতা</title>
+<link rel="canonical" href="https://eyakubshop375.github.io/Eyakub-Shop/">
+<meta name="description" content="Eyakub Shop - অরিজিনাল জুতা, সেরা দামে। WhatsApp এ অর্ডার করুন।">
+<meta property="og:title" content="Eyakub Shop - অরিজিনাল জুতা">
+<meta property="og:description" content="অরিজিনাল জুতা, সেরা দামে। ক্যাশ অন ডেলিভারি।">
+<meta property="og:url" content="https://eyakubshop375.github.io/Eyakub-Shop/">
+<meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👟</text></svg>">
 <style>
 :root{--o:#f85606;--od:#d54600;--bg:#f5f5f5;--tx:#212121;--mu:#757575;--gr:#1a9c3d}
@@ -78,9 +84,17 @@ footer a{color:#ffb380;margin:0 8px}
 <script>
 /* ============ সেটিংস (এখানে শুধু এই অংশ বদলাবেন) ============ */
 const WA = "966567225245";
+const SITE = "https://eyakubshop375.github.io/Eyakub-Shop/";
 const FB = "https://www.facebook.com/profile.php?id=61594226919156";
 // Firebase কনফিগ এখানে পেস্ট করুন (নির্দেশনা আলাদা দেওয়া আছে)। খালি থাকলে ডেমো মোডে চলবে।
-const FIREBASE = { apiKey:"", authDomain:"", projectId:"", appId:"" };
+const FIREBASE = {
+  apiKey: "AIzaSyBQOGYRBc2wadM7CeMibmuquObQDtIB3CU",
+  authDomain: "eyakub-shop-627f9.firebaseapp.com",
+  projectId: "eyakub-shop-627f9",
+  storageBucket: "eyakub-shop-627f9.firebasestorage.app",
+  messagingSenderId: "336769227021",
+  appId: "1:336769227021:web:83cc6171b9ab3ee36cf844"
+};
 /* =========================================================== */
 
 const $=s=>document.querySelector(s);
@@ -107,7 +121,7 @@ async function load(){try{P=(await D.list('products')).sort((a,b)=>(b.ts||0)-(a.
 
 const header=s=>`<div class="top"><div class="w"><span>🚚 সারাদেশে ডেলিভারি • ১০০% অরিজিনাল জুতা</span><a href="${FB}" target="_blank" rel="noopener">📘 আমাদের Facebook পেইজ</a></div></div>
 <header><div class="hd w"><a class="logo" href="#/">Eyakub<span>Shop</span></a>${s?`<input id="q" placeholder="জুতা খুঁজুন..." value="${esc(st.q)}" oninput="st.q=this.value;grid()">`:'<div style="flex:1"></div>'}<a class="wa" href="https://wa.me/${WA}" target="_blank" rel="noopener">💬 WhatsApp</a></div></header>`;
-const footer=()=>`<footer><div class="w"><p><b>Eyakub Shop</b> — অরিজিনাল জুতার বিশ্বস্ত ঠিকানা</p><p style="margin-top:8px"><a href="${FB}" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/${WA}" target="_blank" rel="noopener">WhatsApp: +${WA}</a></p><p style="margin-top:8px;color:#999">© ${new Date().getFullYear()} Eyakub Shop. সর্বস্বত্ব সংরক্ষিত।</p></div></footer>`;
+const footer=()=>`<footer><div class="w"><p><b>Eyakub Shop</b> — অরিজিনাল জুতার বিশ্বস্ত ঠিকানা</p><p style="margin-top:8px"><a href="${FB}" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/${WA}" target="_blank" rel="noopener">WhatsApp: +${WA}</a></p><p style="margin-top:8px"><a href="${SITE}">🌐 ${SITE.replace('https://','')}</a><a href="https://wa.me/?text=${encodeURIComponent('Eyakub Shop - অরিজিনাল জুতা: '+SITE)}" target="_blank" rel="noopener">📤 বন্ধুকে শেয়ার করুন</a></p><p style="margin-top:8px;color:#999">© ${new Date().getFullYear()} Eyakub Shop. সর্বস্বত্ব সংরক্ষিত।</p></div></footer>`;
 
 const card=p=>`<div class="card" onclick="location.hash='#/p/${p.id}'"><div class="im"><img src="${p.imgs?.[0]||PH}" alt="${esc(p.name)}" loading="lazy">${disc(p)?`<b class="bd">-${disc(p)}%</b>`:''}</div><div class="ci"><div class="nm">${esc(p.name)}</div><div class="pr">${money(p.price)}</div>${p.old>p.price?`<s>${money(p.old)}</s>`:''}<div class="st ${p.stock>0?'':'out'}">${p.stock>0?'স্টকে আছে: '+p.stock+' জোড়া':'স্টক শেষ'}</div></div></div>`;
 

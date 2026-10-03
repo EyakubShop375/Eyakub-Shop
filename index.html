@@ -1,14 +1,58 @@
 <!doctype html>
 <html lang="bn">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#062433" />
-    <meta name="description" content="Eyakub Shop — জুতা ও লাইফস্টাইল পণ্যের অনলাইন শপ" />
-    <title>Eyakub Shop</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Eyakub Shop — Shoes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <a class="logo" href="index.html">Eyakub <span>Shop</span></a>
+    <nav>
+      <a href="#home">হোম</a><a href="#categories">ক্যাটাগরি</a><a href="#flash">ফ্ল্যাশ সেল</a><a href="#products">সব পণ্য</a>
+      <a class="admin-link" href="admin.html">Admin</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero wrap">
+  <div>
+    <p class="eyebrow">Eyakub Shop</p>
+    <h1>আপনার পছন্দের জুতা,<br><span>সহজেই অর্ডার করুন</span></h1>
+    <p>নতুন কালেকশন, আকর্ষণীয় দাম এবং দ্রুত অর্ডার ব্যবস্থা।</p>
+    <a class="btn" href="#products">শপিং শুরু করুন</a>
+  </div>
+  <div class="hero-card">👟<small>NEW COLLECTION</small></div>
+</section>
+
+<section id="categories" class="wrap section">
+  <div class="section-head"><h2>ক্যাটাগরি</h2></div>
+  <div id="categoryList" class="categories"></div>
+</section>
+
+<section id="flash" class="wrap section">
+  <div class="section-head"><h2>⚡ ফ্ল্যাশ সেল</h2><span>সীমিত স্টক</span></div>
+  <div id="flashProducts" class="grid"></div>
+</section>
+
+<section id="products" class="wrap section">
+  <div class="section-head"><h2>সব জুতা</h2><input id="search" class="search" placeholder="জুতার নাম খুঁজুন..."></div>
+  <div id="productsGrid" class="grid"></div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap footer">
+    <div><b>Eyakub Shop</b><p>Quality shoes at a fair price.</p></div>
+    <div><b>যোগাযোগ</b><p><a href="https://wa.me/966567225245" target="_blank">WhatsApp</a> · <a href="https://www.facebook.com/profile.php?id=61594226919156" target="_blank">Facebook</a></p></div>
+  </div>
+</footer>
+
+<div id="modal" class="modal hidden"><div class="modal-box"><button class="close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="app.js"></script>
+</body>
 </html>

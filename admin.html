@@ -1,0 +1,9 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Eyakub Shop Admin</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><div class="wrap nav"><a class="logo" href="index.html">Eyakub <span>Admin</span></a><button class="btn" onclick="logout()">Logout</button></div></header>
+<main class="wrap section">
+<div id="loginBox" class="modal-box"><h2>Admin Login</h2><form class="form" onsubmit="login(event)"><label>Email</label><input id="email" type="email" required><label>Password</label><input id="password" type="password" required><button class="btn">Login</button></form></div>
+<div id="panel" style="display:none"><div class="section-head"><h2>Products</h2><button class="btn" onclick="showAdd()">+ নতুন পণ্য</button></div><div id="adminProducts" class="grid"></div></div>
+</main>
+<div id="productModal" class="modal hidden"><div class="modal-box"><button class="close" onclick="hideAdd()">×</button><h2 id="formTitle">নতুন পণ্য</h2><form class="form" onsubmit="saveProduct(event)">
+<input type="hidden" id="pid"><label>নাম</label><input id="pname" required><label>বর্ণনা</label><textarea id="pdesc"></textarea><label>ক্যাটাগরি</label><input id="pcat" value="Men"><label>বর্তমান দাম</label><input id="price" type="number" required><label>আগের দাম</label><input id="oldprice" type="number"><label>স্টক</label><input id="stock" type="number" min="0" required><label>ছবি</label><input id="image" type="file" accept="image/*"><label>অথবা Image URL</label><input id="imageurl"><label><input id="flash" type="checkbox"> Flash Sale</label><label><input id="active" type="checkbox" checked> Active</label><button class="btn">Save</button></form></div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="admin.js"></script></body></html>
